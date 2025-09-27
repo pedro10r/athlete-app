@@ -1,6 +1,6 @@
 export const NAV = {
   ROOT: {
-    TABS: "Tabs",
+    TABS: "MainTabs",
   },
   TABS: {
     HOME_STACK: "HomeStack",
@@ -12,4 +12,4 @@ export const NAV = {
   PROFILE_STACK: {
     PROFILE: "Profile",
   },
-};
+} as const;
