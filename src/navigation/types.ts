@@ -8,6 +8,11 @@ export type ProfileStackParamList = {
   Profile: undefined;
 };
 
+export type AuthStackParamList = {
+  Login: undefined;
+  Register: undefined;
+};
+
 export type TabParamList = {
   HomeStack: NavigatorScreenParams<HomeStackParamList>;
   ProfileStack: NavigatorScreenParams<ProfileStackParamList>;
@@ -15,6 +20,7 @@ export type TabParamList = {
 
 export type RootStackParamList = {
   MainTabs: NavigatorScreenParams<TabParamList>;
+  AuthStack: undefined;
 };
 
 declare global {

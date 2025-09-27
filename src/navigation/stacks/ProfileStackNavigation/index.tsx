@@ -2,6 +2,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 import { ProfileStackParamList } from "@navigation/types";
 import { NAV } from "@navigation/routes";
+
 import { Profile } from "@screens/Profile";
 
 const { Navigator, Screen } =
