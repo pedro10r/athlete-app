@@ -1,7 +1,7 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
-import { TabNavigator } from "./TabNavigator";
-import { NAV } from "./routes";
+import { NAV } from "@navigation/routes";
+import { TabNavigator } from "../TabNavigator";
 
 const { Navigator, Screen } = createNativeStackNavigator();
 

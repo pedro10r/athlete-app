@@ -1,8 +1,8 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
-import { NAV } from "./routes";
-import { ProfileStackNavigation } from "./stacks/ProfileStackNavigation";
-import { HomeStackNavigation } from "./stacks/HomeStackNavigation";
+import { NAV } from "@navigation/routes";
+import { HomeStackNavigation } from "@navigation/stacks/HomeStackNavigation";
+import { ProfileStackNavigation } from "@navigation/stacks/ProfileStackNavigation";
 
 const { Navigator, Screen } = createBottomTabNavigator();
 
