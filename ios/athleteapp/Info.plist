@@ -27,7 +27,8 @@
       <dict>
         <key>CFBundleURLSchemes</key>
         <array>
-          <string>com.anonymous.athleteapp</string>
+          <string>athleteapp</string>
+          <string>com.pedrorocha.athleteapp</string>
         </array>
       </dict>
     </array>

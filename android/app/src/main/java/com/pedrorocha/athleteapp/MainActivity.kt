@@ -1,4 +1,4 @@
-package com.anonymous.athleteapp
+package com.pedrorocha.athleteapp
 
 import android.os.Build
 import android.os.Bundle

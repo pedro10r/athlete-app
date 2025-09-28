@@ -3,11 +3,12 @@
     "name": "athlete-app",
     "slug": "athlete-app",
     "version": "1.0.0",
+    "scheme": "athleteapp",
     "android": {
-      "package": "com.anonymous.athleteapp"
+      "package": "com.pedrorocha.athleteapp"
     },
     "ios": {
-      "bundleIdentifier": "com.anonymous.athleteapp"
+      "bundleIdentifier": "com.pedrorocha.athleteapp"
     },
     "newArchEnabled": true
   }

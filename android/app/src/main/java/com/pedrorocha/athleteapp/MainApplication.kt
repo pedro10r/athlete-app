@@ -1,4 +1,4 @@
-package com.anonymous.athleteapp
+package com.pedrorocha.athleteapp
 
 import android.app.Application
 import android.content.res.Configuration
