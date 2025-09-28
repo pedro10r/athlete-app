@@ -1,6 +1,6 @@
 import { create } from "zustand";
-import { persist, createJSONStorage, StateStorage } from "zustand/middleware";
-import { MMKV } from "react-native-mmkv";
+import { persist, createJSONStorage } from "zustand/middleware";
+import { mmkvStorageAdapter } from "@lib/storage";
 
 interface User {
   name: string;
@@ -13,21 +13,6 @@ interface AuthState {
   login: (userData: User, token: string) => void;
   logout: () => void;
 }
-
-const storage = new MMKV();
-
-const mmkvStorageAdapter: StateStorage = {
-  setItem: (name, value) => {
-    return storage.set(name, value);
-  },
-  getItem: (name) => {
-    const value = storage.getString(name);
-    return value ?? null;
-  },
-  removeItem: (name) => {
-    return storage.delete(name);
-  },
-};
 
 export const useAuthStore = create<AuthState>()(
   persist(
