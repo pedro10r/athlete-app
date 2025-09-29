@@ -5,6 +5,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 
 import { TextInput } from "@components/TextInput";
+import { styles } from "./styles";
 
 const loginSchema = z.object({
   email: z.string().email("E-mail inválido").nonempty("O e-mail é obrigatório"),
@@ -45,13 +46,3 @@ export function Login() {
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    paddingHorizontal: 24,
-    backgroundColor: "#f0f0f0",
-  },
-});
