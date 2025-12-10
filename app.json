@@ -10,6 +10,14 @@
     "ios": {
       "bundleIdentifier": "com.pedrorocha.athleteapp"
     },
-    "newArchEnabled": true
+    "newArchEnabled": true,
+    "plugins": [
+      [
+        "expo-local-authentication",
+        {
+          "faceIDPermission": "Permitir o uso do Face ID para autenticação rápida."
+        }
+      ]
+    ]
   }
 }
